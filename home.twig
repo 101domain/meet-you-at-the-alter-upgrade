@@ -1,0 +1,64 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+	<section>
+	  <div class="feature__hero">
+	  	
+	  	<!-- Theme Feature Widget -->
+	    <div class="feature__hero--content">
+  			{{widget('feature', 'featurehome', {
+	        'defaultBgImg': asset("images/feature-t3.jpg"),
+	        'positionTopPercentage': '0',
+	        'header': '{{ profile.headline }}',
+  				'strapline': '{{ profile.strapline }}',
+  				'showBtn': false
+		    })|raw}}
+		    
+		    {% include "includes/header-home.twig" %}  			
+	  	</div>
+	  	<section class="location">
+			  <div class="row">
+			  	<div class="small-12 medium-4 medium-push-2 columns text-center">
+			  		<div><span class="heading">{{ profile.address }}</span></div>
+			  		<div><span>{{ profile.address1 }}, {{ profile.address2 }} {{ profile.postalcode }}</span></div>
+			  		<div>{{widget('content', 'featuretime', {content:'28th February, 2017 at 3:30pm'})|raw}}</div>
+			  	</div>
+			  	<div class="small-12 medium-4 medium-pull-2 columns">
+			  		{{widget('button', 'rsvpbutton', {
+						  'text': 'RSVP',
+						  'align': 'widget-align-center',
+						  'action': 'internal'
+						})|raw}}
+			  	</div>
+			  </div>
+			</section>
+		</div>
+	</section>
+	
+	<section class="main-content">
+		<div class="row">
+			<div class="small-12 columns">
+				<h1>{{widget('content', 'maincolumnheading', {content:'Lorum Ipsum'})|raw}}</h1>
+			</div>
+		</div>
+		<div class="row">
+	 		<div class="small-12 medium-6 columns">
+	 			{{widget('content', 'maincolumn', {content:'<p>Lorum Ipsum et el deleniti atque et corrupti quos dolores quas et dolorum qui Lorum quidem rerum facilis est et expedita distinctio. Nam tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>'})|raw}}
+	 		</div>
+	 		<div class="small-12 medium-6 columns">
+	 			{{widget('image', 'footerimage', {
+				  'src': asset("images/bride-with-flowers.jpg"),
+				  'alt':'Bride with bouquet'
+				})|raw}}
+	 		</div>
+	 	</div>
+		
+		<div class="row collapse">
+			<div class="small-12 columns">
+			    {{zone('main')|raw}}
+			</div>
+		</div>
+	</section>
+ 
+{% endblock %}
