@@ -1,7 +1,7 @@
-Meet You At the Alter
+Meet You At the Alter Upgrade
 ========
 
-License
--------
+BaseKit premium (no-ads) wedding template meet-you-at-the-alter for .Vegas website
 
-This software is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+Changes 2016-12-16 - James Farthing
++ initial template build
