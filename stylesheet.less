@@ -7,7 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=Allura|Lato|Playfair+Display');
 
 @import "@{templateLocal}/less/responsive.less";  // Responsive framework
-@import "@{templateLocal}/less/widgets.less";
+@import "@{templateLocal}/less/mixins.less";       // Widgets
+@import "@{templateLocal}/less/widgets.less";       // Widgets
 @import "@{templateLocal}/less/template.less";  // Header & Footer styling
 
 
@@ -581,16 +582,16 @@ body { background-color:#f8f8f8; }
 	line-height: @font__feature-headline--line-height;
 	font-weight: @font__feature-headline--font-weight;
 	color: @color__feature-headline--text;
-  text-align: center;
-  width: 100%;
-  left:0;
-  position:relative; }
-  .headline::before {
+	text-align: center;
+	width: 100%;
+	left:0;
+	position:relative; }
+	.headline::before {
 		content: "";
 		position:absolute;
 		width:100%;
 		height:40px;
-	  left:0; 
+		left:0; 
 		top:-50px;
 		background-image:image('/images/name-background_top.png');
 		background-repeat:no-repeat;
@@ -607,15 +608,15 @@ body { background-color:#f8f8f8; }
 	font-weight: @font__feature-strapline--font-weight;
 	color: @color__feature-strapline--text;
 	text-transform:uppercase;
-  text-align: center;
-  position:relative;
-  text-shadow: 0 0 10px rgba(0,0,0,1); } 
-  .strapline::after {
+	text-align: center;
+	position:relative;
+	text-shadow: 0 0 10px rgba(0,0,0,1); } 
+	.strapline::after {
 		content: "";
 		position:absolute;
 		width:100%;
 		height:25px;
-	  left:0; 
+		left:0; 
 		bottom:-30px;
 		background-image:image('/images/name-background_bot.png');
 		background-repeat:no-repeat;
@@ -674,7 +675,7 @@ body { background-color:#f8f8f8; }
 	text-align:right;
 	text-transform:uppercase; }
 
-.main-content { background-color:#f8f8f8; }
+.main-content { background-color:#fff; }
 .main-content .row { padding-left:2em; padding-right:2em; }
 .main-content > div:first-child { padding-top:3.5em; padding-bottom:1.5em; }
 .main-content > div:last-child { padding-top:1.5em; padding-bottom:2em; }
@@ -698,6 +699,8 @@ body { background-color:#f8f8f8; }
 .gallery-list li { margin:0 0.25em; }
 .gallery__caption {
     display: none; }
+	
+.map { border: 0.5em solid #fff; }
     
 @media only screen and (min-width: 44.125em) and (max-width: 64em) {
 	.gallery-list li { margin:0; }
@@ -707,8 +710,8 @@ body { background-color:#f8f8f8; }
 	.feature__hero .widget .feature__background-image { min-height: 600px; }
 	.feature__location .widget span { font-size:1.25em; }
 	.gallery__gallery-item {
-    width: 24%;
-    margin-bottom: 0; }
+		width: 24%;
+		margin-bottom: 0; }
 }
 @media only screen and (max-width: 44.125em) { 
 	.feature__hero .content-wrap {
@@ -722,23 +725,23 @@ body { background-color:#f8f8f8; }
 		font-size:1.25em;
 		margin-bottom:1em; }
 	.feature__content-wrap {
-    bottom: 10px; }
+		bottom: 10px; }
 	.feature__headline { 
 		font-size: 1.75em;
 		top:70px; }
 	.strapline {    
 		font-size: .85em;
-    top:75px;
-    line-height:24px;
-    letter-spacing: 1px;
-    }
-  .feature__location .widget span {
-  	font-size:0.9em; }
-  .locaton {
-  	position: relative; }
-  h1, main-content h1 span {
-  	font-size: 2.25em;
-  	margin-bottom: 1.25em; }
+		top:75px;
+		line-height:24px;
+		letter-spacing: 1px;
+		}
+	.feature__location .widget span {
+		font-size:0.9em; }
+	.locaton {
+		position: relative; }
+	h1, main-content h1 span {
+		font-size: 2.25em;
+		margin-bottom: 1.25em; }
   	h1::before {
   		height: 25px;
   		bottom: -25px; }
@@ -746,7 +749,7 @@ body { background-color:#f8f8f8; }
 
 
 	
-	// -----------------------------
+// -----------------------------
 // RSVP page
 // -----------------------------
 
