@@ -4,18 +4,18 @@
 	"thumbnail":"thumbnail.png",
 	"screenshot": "meet-you-at-the-alter-screenshot.jpg",
 	"templateType":"standard",
-  "pageTypes":["home", "story", "details", "photos", "registry", "rsvp"],
-  "images": [
+	"pageTypes":["home", "story", "details", "photos", "registry", "rsvp"],
+	"images": [
         "images/feature-t3.jpg",
         "images/kissing.png",
         "images/bride-with-flowers.jpg",
         "images/chapel-exit.jpg",
         "images/pair-of-rings.jpg"
     ],
-  "tags": {
+	"tags": {
 	    "en": ["wedvegas", "premium", "wedding", "white", "announcement", "event"]
 	  },
-  "colorSwatches":
+	"colorSwatches":
     {
         "Swatch 1": {
             "color1":"#ffffff",
