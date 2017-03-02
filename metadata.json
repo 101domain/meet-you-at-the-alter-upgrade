@@ -2,7 +2,7 @@
 	"name": "meet-you-at-the-alter-upgrade",
 	"widgetVersion":2,
 	"thumbnail":"thumbnail.png",
-	"screenshot": "meet-you-at-the-alter-screenshot.jpg",
+	"screenshot": "marry-me-screenshot.jpg",
 	"templateType":"standard",
 	"pageTypes":["home", "story", "details", "photos", "registry", "rsvp"],
 	"images": [
